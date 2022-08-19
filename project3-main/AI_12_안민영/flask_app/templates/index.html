@@ -1,0 +1,67 @@
+<html>
+    <body bgcolor = #FFCCCC>
+
+        <center>
+
+        <h1> 심혈관 질환 예측  </h1><br>
+
+        <img src='https://www.nhis.or.kr/static/alim/paper/oldpaper/202111/assets/images/sub/sub05_01.png'>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> 
+            
+            나이 <br><br>  
+            <input type="number", name='a', placeholder="여기에 입력하세요"> <br><br>
+
+            성별 <br><br>
+            <input type = "radio" name = "b" value = 1> 남성
+            <input type = "radio" name = "b" value = 2> 여성 <br><br>
+
+            키 <br><br>
+            <input type="number", name='c', placeholder="여기에 입력하세요"> <br><br>
+
+            몸무게 <br><br>
+            <input type="number", name='d', placeholder="여기에 입력하세요"> <br><br>
+
+            최고 혈압 <br><br>
+            <input type="number", name='e', placeholder="여기에 입력하세요"> <br><br>
+
+            최저 혈압 <br><br>
+            <input type="number", name='f', placeholder="여기에 입력하세요"> <br><br>
+
+            콜레스테롤<br>
+            보건소 검사비용 : 3,500원<br>
+            정상 = 200이하, 높음 = 240이상 <br><br>
+            <input type = "radio" name = "g" value = 1> 정상
+            <input type = "radio" name = "g" value = 2> 경계
+            <input type = "radio" name = "g" value = 3> 높음 <br><br>
+
+            혈당<br>
+            보건소 검사비용 : 800원<br>
+            공복 : 정상 = 99이하, 높음 = 126이상<br>
+            식후(2시간) : 정상 = 140이하, 높음 = 200이상 <br><br>
+            <input type = "radio" name = "h" value = 1> 정상
+            <input type = "radio" name = "h" value = 2> 경계
+            <input type = "radio" name = "h" value = 3> 높음 <br><br>
+
+            흡연 여부 <br><br>
+            <input type = "radio" name = "i" value = 1> O
+            <input type = "radio" name = "i" value = 0> X <br><br>
+
+            음주 여부 <br><br>
+            <input type = "radio" name = "j" value = 1> O
+            <input type = "radio" name = "j" value = 0> X <br><br>
+
+            운동 여부 <br><br>
+            <input type = "radio" name = "k" value = 1> O
+            <input type = "radio" name = "k" value = 0> X <br><br>
+        </b>
+            <input type="submit" , value='검사하기' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
